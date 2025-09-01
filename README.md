@@ -59,8 +59,8 @@ npm run build
 ## 📞 Contact
 
 - **Email**: pushkarppisolkar@gmail.com
-- **GitHub**: github.com/PushkarPisolkar04/
-- **LinkedIn**: linkedin.com/in/pushkar-pisolkar
+- **GitHub**: https://www.github.com/PushkarPisolkar04/
+- **LinkedIn**: https://www.linkedin.com/in/pushkar-pisolkar
 
 ## 📄 License
 
