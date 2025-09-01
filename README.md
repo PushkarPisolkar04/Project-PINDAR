@@ -34,14 +34,13 @@ npm run build
 ## 👥 Team
 
 ### Project Lead
-- **[Your Name]** - Full Stack Development & AI Integration
+- **[Pushkar Pisolkar]**
 
 ### Team Members
-- **[Teammate 1]** - Frontend Development & UI/UX
-- **[Teammate 2]** - Backend Development & API Integration
-- **[Teammate 3]** - AI/ML Implementation & Data Analysis
-- **[Teammate 4]** - Network Analysis & Visualization
-- **[Teammate 5]** - Security & Compliance
+- **[Shruti Jauhari]** 
+- **[Vivek Sonpimple]**
+- **[Gayatri Jadhav]** 
+- **[Bhavik Pimpalkar]** 
 
 ## 🚀 Deployment
 
@@ -50,10 +49,6 @@ npm run build
 2. Set build command: `npm run build`
 3. Set output directory: `build`
 4. Deploy automatically on push
-
-### Netlify
-1. Drag & drop `build` folder
-2. Or connect GitHub repository
 
 ### GitHub Pages
 ```bash
@@ -68,9 +63,9 @@ npm run build
 
 ## 📞 Contact
 
-- **Email**: [your.email@example.com]
-- **GitHub**: [github.com/yourusername]
-- **LinkedIn**: [linkedin.com/in/yourprofile]
+- **Email**: [pushkarppisolkar@gmail.com]
+- **GitHub**: [github.com/PushkarPisolkar04/]
+- **LinkedIn**: [linkedin.com/in/pushkar-pisolkar]
 
 ## 📄 License
 
