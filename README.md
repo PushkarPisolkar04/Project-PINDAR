@@ -34,13 +34,13 @@ npm run build
 ## 👥 Team
 
 ### Project Lead
-- **[Pushkar Pisolkar]**
+- **Pushkar Pisolkar**
 
 ### Team Members
-- **[Shruti Jauhari]** 
-- **[Vivek Sonpimple]**
-- **[Gayatri Jadhav]** 
-- **[Bhavik Pimpalkar]** 
+- **Shruti Jauhari** 
+- **Vivek Sonpimple**
+- **Gayatri Jadhav** 
+- **Bhavik Pimpalkar** 
 
 ## 🚀 Deployment
 
@@ -55,11 +55,6 @@ npm run build
 npm run build
 # Deploy build folder to gh-pages branch
 ```
-
-## 📱 Live Demo
-
-- **Demo URL**: [Your Demo URL]
-- **QR Code**: [Generate using `public/qr-generator.html`]
 
 ## 📞 Contact
 
