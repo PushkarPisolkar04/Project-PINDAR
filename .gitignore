@@ -92,7 +92,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public  # Commented out - React apps need public folder
 
 # Storybook build outputs
 .out
