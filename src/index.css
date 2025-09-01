@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-secondary-800 border border-secondary-700 rounded-lg shadow-lg;
+  }
+  
+  .card-hover {
+    @apply hover:bg-secondary-700 hover:border-secondary-600 transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-700 hover:bg-secondary-600 text-secondary-200 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-danger {
+    @apply bg-danger-600 hover:bg-danger-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply bg-secondary-800 border border-secondary-600 text-secondary-100 placeholder-secondary-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-success-100 text-success-800;
+  }
+  
+  .badge-warning {
+    @apply bg-warning-100 text-warning-800;
+  }
+  
+  .badge-danger {
+    @apply bg-danger-100 text-danger-800;
+  }
+  
+  .badge-info {
+    @apply bg-primary-100 text-primary-800;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Custom animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+/* Network visualization styles */
+.network-link {
+  stroke-linecap: round;
+  transition: stroke-opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.network-node {
+  cursor: pointer;
+  transition: none;
+  transform-origin: center;
+}
+
+.network-node circle {
+  transition: stroke-width 0.2s ease, filter 0.2s ease;
+}
+
+.network-node:hover circle {
+  filter: brightness(1.1);
+}
+
+.network-node text {
+  pointer-events: none;
+  user-select: none;
+  transition: none;
+}
+
+/* Prevent any unwanted animations */
+.network-node * {
+  transition: none;
+}
+
+.network-node:hover * {
+  transition: stroke-width 0.2s ease, filter 0.2s ease;
+}
+
+/* Network legend styles */
+.network-legend {
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid #475569;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure SVG stability */
+svg {
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Enhanced button effects */
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary:active {
+  transform: translateY(1px);
+}
+
+.btn-danger:active {
+  transform: translateY(1px);
+}
+
+/* Disabled button state */
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-danger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success feedback animation */
+@keyframes success-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.success-feedback {
+  animation: success-pulse 0.3s ease-in-out;
+}
+
+/* Network graph styles */
+.network-node {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.network-node:hover {
+  transform: scale(1.1);
+}
+
+.network-link {
+  stroke: #64748b;
+  stroke-width: 2;
+  transition: all 0.2s ease;
+}
+
+.network-link:hover {
+  stroke: #60a5fa;
+  stroke-width: 3;
+} 
